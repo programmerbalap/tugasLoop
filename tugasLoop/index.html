@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+
+    <!-- Start soal Nomor 1 -->
+    <br>
+    <hr>
+    <h3>Soal nomor 1</h3>
+    <script>
+        for (let user = 1; user <= 100; user++) {
+            document.write("User ke-" + user + "<br>");
+        }
+    </script>
+    <!-- End soal nomor 1 -->
+
+    <!-- Start soal Nomor 2 -->
+    <br>
+    <h3>Soal nomor 2</h3>
+    <p>Perulangan kelipatan 2 dari 0 samapai dengan 10</p>
+    <script>
+        for (let nilaiAwal = 0; nilaiAwal <= 10; nilaiAwal = nilaiAwal + 2) {
+            document.write("Perulangan ke-" + nilaiAwal + "<br>");
+        }
+    </script>
+    <!-- End soal nomor 2 -->
+
+    <!-- Start soal Nomor 3 -->
+    <br>
+    <h3>Soal nomor 3</h3>
+    <p>Menentukan ganjil genap dari angka 0 sampai dengan 20</p>
+    <script>
+        for (let angka = 0; angka <= 20; angka++) {
+            if (angka % 2 == 0) {
+                document.write("Angka " + angka + " bernilai genap <br>");
+            } else {
+                document.write("Angka " + angka + " bernilai ganjil <br>");
+            }
+        }
+    </script>
+    <!-- End soal nomor 3 -->
+
+    <!-- Start soal Nomor 4 -->
+    <br>
+    <h3>Soal nomor 4</h3>
+    <script>
+        let nilai = 0;
+
+        function Konfirmasi() {
+            let konfirm = confirm("Apakah ingin mengulang?");
+            if (konfirm) {
+                nilai = nilai + 1;
+                Konfirmasi();
+            } else {
+                console.log(nilai)
+                alert(`Perulangan sudah dilakukan sebanyak ${nilai} kali.`);
+                document.write("Perulangan sudah dilakukan sebanyak " + nilai);
+            }
+        }
+        Konfirmasi();
+    </script>
+    <!-- End soal nomor 4 -->
+
+    <!-- Start soal Nomor 5 -->
+    <br>
+    <h3>Soal nomor 5</h3>
+    <script>
+        let = 0;
+
+        function pertanyaan() {
+            let jawaban = prompt("Apa kepanjangan dari IB?");
+            if (jawaban == "Impact Byte") {
+                alert("Selamat jawaban kamu benar");
+                document.write("Selamat jawaban kamu benar");
+            } else {
+                pertanyaan()
+            }
+        }
+        pertanyaan();
+    </script>
+    <!-- End soal nomor 5 -->
+</body>
+
+</html>
